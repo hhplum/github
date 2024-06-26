@@ -4,7 +4,6 @@ name: Practice CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
     tags:
       - "v*"
 
@@ -33,4 +32,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Own
-        run: echo ${github.ref_name}
+        run: echo "${github.ref_name}"
