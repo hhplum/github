@@ -32,4 +32,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Own
-        run: echo ${github.ref_name}
+        run: echo ${{ github.ref_name }}
