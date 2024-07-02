@@ -33,3 +33,6 @@ jobs:
           echo test, and deploy your project.
       - name: Own
         run: echo ${{ github.ref_name }}
+      - name: Url
+        run: echo ${{ github.event.repository.html_url }}
+        run: echo ${{ github.repository }}
